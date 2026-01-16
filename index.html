@@ -9,6 +9,24 @@
         content="Senior DevOps Engineer with 6+ years experience in AWS, Azure, Kubernetes, and cloud infrastructure automation">
     <meta name="keywords"
         content="DevOps, AWS, Azure, Kubernetes, Site Reliability Engineer, Cloud Engineer, Terraform, CI/CD">
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vanessa9373.github.io/vanessa-porfolio/">
+<meta property="og:title" content="Vanessa Awo - Senior Site Reliability Engineer">
+<meta property="og:description" content="6+ years DevOps & SRE experience. 99.95% SLA, 45% cost reduction, AWS/Azure expert">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://vanessa9373.github.io/vanessa-porfolio/">
+<meta property="twitter:title" content="Vanessa Awo - Senior Site Reliability Engineer">
+<meta property="twitter:description" content="6+ years DevOps & SRE experience. 99.95% SLA, 45% cost reduction">
+<link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>">
+
+
+
+<link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>">
+
+
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap"
         rel="stylesheet">
@@ -38,6 +56,11 @@
             overflow-x: hidden;
             line-height: 1.6;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
 
         .grid-background {
             position: fixed;
@@ -283,6 +306,9 @@
             padding: 8rem 0;
             position: relative;
         }
+
+
+        
 
         .section-header {
             text-align: center;
@@ -787,8 +813,86 @@
                 gap: 1.5rem;
             }
         }
+
+        .project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 255, 136, 0.2);
+    border-color: var(--primary);
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+body {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.hero-content {
+    animation: fadeIn 0.8s ease-out 0.2s both;
+}
+
+section {
+    animation: fadeIn 0.6s ease-out;
+}
+
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem !important;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr 1fr !important;
+    }
+    
+    .expertise-grid, .certifications-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    section {
+        padding: 4rem 0 !important;
+    }
+    
+    .container {
+        padding: 0 1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .hero-title {
+        font-size: 2rem !important;
+    }
+}
+
     </style>
+
+    
 </head>
+
+
+
+
+
 
 <body>
     <div class="grid-background"></div>
@@ -816,11 +920,18 @@
                 <div class="hero-tag"> Status: open to opportunities </div>
 
                 <h1 class="hero-title">Vanessa Awo</h1>
+                <p class="hero-subtitle">Senior Site Reliability Engineer</p>
+                <p
+                    style="font-size: 1.3rem; color: var(--secondary); font-weight: 500; margin-top: 0.5rem; font-family: 'Orbitron', sans-serif; letter-spacing: 1px;">
+                    DevOps | Cloud Infrastructure | Automation
+                </p>
 
                 <p class="hero-subtitle">Senior DevOps Engineer| Site Reliability Specialist</p>
 
-                <p class="hero-subtitle">Senior Site Reliability Engineer | Cloud Infrastructure Specialist | DevOps
-                    Automation Expert</p>
+
+
+                <p class="hero-subtitle">Senior Site Reliability Engineer
+                    DevOps | Cloud Infrastructure | Automation </p>
 
                 <p class="hero-description">
                     Accomplished Site Reliability Engineer with 6+ years of experience architecting, deploying, and
@@ -828,7 +939,19 @@
                     infrastructure at enterprise scale. Specialized in transforming complex technical challenges into
                     resilient, automated solutions that
                     drive business value.
+                </p>
 
+<div style="display: flex; gap: 1.5rem; margin-top: 2.5rem; flex-wrap: wrap;">
+    <a href="#contact" style="background: var(--primary); color: var(--bg-dark); padding: 1rem 2.5rem; border-radius: 4px; text-decoration: none; font-family: 'Orbitron', sans-serif; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; display: inline-block; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+        💼 Hire Me
+    </a>
+    <a href="mailto:vanessa93730@gmail.com" style="background: transparent; color: var(--primary); padding: 1rem 2.5rem; border-radius: 4px; border: 2px solid var(--primary); text-decoration: none; font-family: 'Orbitron', sans-serif; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; display: inline-block;">
+        ✉️ Get In Touch
+    </a>
+</div>
+
+
+                
                 <h4
                     style="font-family: 'Orbitron', sans-serif; color: var(--secondary); font-size: 1.4rem; margin: 2.5rem 0 1.5rem; font-weight: 600;">
                     Professional Expertise
@@ -1013,6 +1136,8 @@
         </div>
         </div>
     </section>
+
+
 
 
     <div class="cta-buttons">
@@ -1600,7 +1725,66 @@
         </div>
     </section>
 
-
+<!-- Why Hire Me Section -->
+<section style="padding: 6rem 0; background: var(--bg-dark);">
+    <div class="container">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <div style="color: var(--secondary); font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; margin-bottom: 1rem;">
+                    // Value Proposition
+                </div>
+                <h2 style="font-family: 'Orbitron', sans-serif; color: var(--primary); font-size: 2.5rem; margin-bottom: 1rem;">
+                    Why Work With Me
+                </h2>
+                <p style="color: var(--text-dim); max-width: 600px; margin: 0 auto;">
+                    Delivering measurable results in reliability, security, and cost optimization
+                </p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div style="padding: 2.5rem; background: var(--card-bg); border-radius: 4px; border: 1px solid var(--border); transition: all 0.3s ease;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+                    <h3 style="color: var(--primary); font-family: 'Orbitron', sans-serif; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Proven Track Record
+                    </h3>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        99.95% SLA delivered for Department of Homeland Security critical systems
+                    </p>
+                </div>
+                
+                <div style="padding: 2.5rem; background: var(--card-bg); border-radius: 4px; border: 1px solid var(--border); transition: all 0.3s ease;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔒</div>
+                    <h3 style="color: var(--primary); font-family: 'Orbitron', sans-serif; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Security Expert
+                    </h3>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        FedRAMP, NIST 800-53, HIPAA, and DoD IL4/IL5 compliance expertise
+                    </p>
+                </div>
+                
+                <div style="padding: 2.5rem; background: var(--card-bg); border-radius: 4px; border: 1px solid var(--border); transition: all 0.3s ease;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">💰</div>
+                    <h3 style="color: var(--primary); font-family: 'Orbitron', sans-serif; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Cost Optimizer
+                    </h3>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        45% infrastructure cost reduction through FinOps and automation
+                    </p>
+                </div>
+                
+                <div style="padding: 2.5rem; background: var(--card-bg); border-radius: 4px; border: 1px solid var(--border); transition: all 0.3s ease;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+                    <h3 style="color: var(--primary); font-family: 'Orbitron', sans-serif; margin-bottom: 1rem; font-size: 1.3rem;">
+                        Automation First
+                    </h3>
+                    <p style="color: var(--text-light); line-height: 1.7;">
+                        10x deployment velocity improvement through GitOps and CI/CD
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
@@ -1643,7 +1827,15 @@
         </div>
     </section>
 
+    
+
     <footer>
         <div class="footer-content">
             <div>© 2025 Vanessa Awo. All rights reserved.</div>
-            <di
+            <div>
+                Designed & Developed by Vanessa Awo
+            </div>
+        </div>
+    </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
